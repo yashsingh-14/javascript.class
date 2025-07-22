@@ -7,9 +7,31 @@
 </head>
 <body>
     <script>
-        // Print multiplication table of n
-    let n = 5; // You can change this value
-    
+       var n=5
+       var i = 1;
+       for(i;i<11;i++){
+       document.writeln(n + " x " + i + " = " + (n * i));
+         document.writeln("<br><br>")
+       }
+
+
+
+        var n = 5;
+       var i = 1;
+       while (i < 11) {
+           document.writeln(n + " x " + i + " = " + (n * i));
+           document.writeln("<br><br>");
+           i++;
+       }
+
+
+       var n = 5;
+       var i = 1;
+       do{
+         document.writeln(n + " x " + i + " = " + (n * i));
+       document.writeln("<br><br>");
+       i++;
+   } while (i < 11);
 
     </script>
 </body>

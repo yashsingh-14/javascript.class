@@ -16,22 +16,24 @@
         }
         document.writeln("Sum of first " + n + " natural numbers is: " + sum);
 
-        // while loop version
-        let i =  prompt("Enter a number");
+        // while loop 
+        let k =  prompt("Enter a number");
+        let i= 1;
         sum = 0;
-        while (i <= n) {
+        while (i <= k) {
             sum += i;
             i++;
         
         }
         document.writeln("<br>Sum of first " + n + " natural numbers using while loop is: " + sum);
-        // do-while loop version
+        // do-while loop 
+        let l = prompt("Enter a number");
         i = 1; // Reset i for do-while loop
         sum = 0;
         do {
             sum += i;
             i++;
-        } while (i <= n);
+        } while (i <= l);
         document.writeln("<br>Sum of first " + n + " natural numbers using do-while loop is: " + sum);
         
 

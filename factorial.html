@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   
+   
+   var n = 5;
+    var fact = 1;
+    for (var i = 1; i <= n; i++) {
+        fact = fact * i;
+    }
+     document.writeln("Using for loop: Factorial of " + n + " is " + fact + "<br><br>");
+
+
+    var n = 5;
+    var fact = 1;
+     var i = 1;
+    while (i <= n) {
+        fact = fact * i;
+        i++;
+    }
+    document.writeln("Factorial of " + n + " is " + fact + "<br><br>");
+
+
+    var n = 5;
+    var fact = 1;
+    var i = 1;
+    do {
+        fact = fact * i;
+        i++;
+    } while (i <= n);
+    document.writeln("Factorial of " + n + " is " + fact); 
+
+
+</script>
+</body>
+</html>

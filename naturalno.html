@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    
+     let n = prompt("Enter a number"); // You can change this value
+        let sum = 0;
+        for (let i = 1; i <= n; i++) {
+            sum += i;
+        }
+        document.writeln("Sum of first " + n + " natural numbers is: " + sum);
+
+        // while loop version
+        let i =  prompt("Enter a number");
+        sum = 0;
+        while (i <= n) {
+            sum += i;
+            i++;
+        
+        }
+        document.writeln("<br>Sum of first " + n + " natural numbers using while loop is: " + sum);
+        // do-while loop version
+        i = 1; // Reset i for do-while loop
+        sum = 0;
+        do {
+            sum += i;
+            i++;
+        } while (i <= n);
+        document.writeln("<br>Sum of first " + n + " natural numbers using do-while loop is: " + sum);
+        
+
+</script>
+</body>
+</html>

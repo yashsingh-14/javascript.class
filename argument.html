@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function argu(x,y){
+            document.write("value of x:",x,"<br>")
+            document.write("value of y:",y,"<br><hr>")
+
+            //argument [0]=100
+            document.write("value of x:",arguments[0],"<br>")
+            document.write("value of y:",arguments[1],"<br><>hr")
+
+            document.write("Length of arguments is:",arguments.length,"<br><hr>")
+
+        }
+        argu(10,20,30)
+
+        function sum() {
+            let total = 0;
+    for (let i = 0; i< arguments.length; i++) {
+        total += arguments[i];
+        
+    }
+    return total;
+        }
+        document.write("sum is :",sum( 1,2,3),"<br>")
+        document.write("sum is :",sum(10,20,30),"<br><hr>")
+    </script>
+</body>
+</html>

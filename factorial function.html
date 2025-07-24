@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   
+   // normal function
+   function Factorial (n){
+    fact=1
+       for (var i = 1; i <= n; i++) {
+           fact = fact * i;
+        }
+        console.log("Using for loop: Factorial of " + n + " is " + fact + "<br><br>");
+    }
+
+Factorial(5)
+
+
+//arrow function
+var factorial = (n) => {
+    let fact = 1;
+    for (let i = 1; i <= n; i++) {
+        fact = fact * i;
+    }
+    console.log("Using arrow function: Factorial of " + n + " is " + fact + "<br><br>");
+
+}
+factorial(5)
+</script>
+
+</body>
+</html>

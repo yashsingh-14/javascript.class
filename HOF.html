@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <H1>Higher Order Function</H1>
+    <script>
+        let x=[1,2,3,4,]
+
+        //foreach............
+        x.forEach(function(element,index,array){
+            console.log(array[index]*2)
+        }
+    )
+
+//map..........................
+
+let y=x.map(function(element,index,array){
+    return array[index]*2
+}
+)
+
+//filter................
+let fil=x.filter(function(element,index,array){
+    return element%2==0
+}
+)
+
+console.log("filter",fil)
+console.log(x)
+console.log(y)
+
+
+//reduce............
+
+const number = [1,2,3,4,5]
+console.log("===== Reduce function without inittial value =====")
+const sum = number.reduce(function (acc, element) {
+    return acc + element
+}
+)
+console.log(sum)
+
+    </script>
+
+</body>
+</html>

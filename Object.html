@@ -6,11 +6,48 @@
     <title>Document</title>
 </head>
 <body>
-    
-<script>
-    //factory function
-          // spread operators
-</script>
+    <script>
+        // object function 
 
+        let avernger={
+            f_name:'steve',              //properties
+            //heroic_name:'Caption',     //properties
+            'heroic name':'Caption',     //properties
+            power: function(){ return 'Shield is my power'}   //method
+
+        }
+
+        console.log(avernger)
+        console.log(avernger.f_name)
+        //console.log(avenger.heroic_name)
+        console.log(avernger['heroic name'])
+        console.log(avernger.power())
+
+        let avenger1=new Object()    //let avenger1= {}
+        avenger1.f_name ='Bruce'
+        avenger1.l_name ='Banner'
+
+        console.log(avenger1)
+        console.log(avenger1.l_name)
+
+            // factory function
+        function shield(nm,hn){
+            return {
+                f_name:nm,          //properties
+                heroic_name:hn,      //properties
+                power: function () {return 'Shield is my power'}   //method
+            }
+        }
+
+
+        let s = shield('thor Odin', 'thor')
+        console.log(s.f_name)
+
+        let s1 = shield('scott lang', 'Ant man')
+        console.log(s1.f_name)
+
+
+
+    </script>
 </body>
 </html>

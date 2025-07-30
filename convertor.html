@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Converter</title>
+</head>
+<body>
+  <div class="main">
+    <div class="head">
+      <h1 class="heading">Convertor</h1>
+    </div>
+    <div class="convert">
+      <input type="number" id="val" value="1"><br><br>
+      <div class="label">
+        <input type="radio" id="m_to_c" name="convert">
+        <label for="m_to_c">Meter -> Centimeter</label><br>
+        <input type="radio" id="km_to_m" name="convert">
+        <label for="km_to_m">Kilometer -> Meter</label><br>
+        <input type="radio" id="mi_to_km" name="convert">
+        <label for="mi_to_km">Mile -> Kilometer</label><br>
+        <button class="button" type="button" onclick="convert()">Convert</button>
+        </div>
+    </div>
+    <div class="result">
+      <h2 id="res"></h2>
+    </div>
+  </div>
+  <script>
+    let input = document.getElementById('val');
+    let m_to_c = document.getElementById('m_to_c');
+    let km_to_m = document.getElementById('km_to_m');
+    let mi_to_km = document.getElementById('mi_to_km');
+    let res = document.getElementById('res');
+
+    function convert() {
+      if (input.value > 0) {
+        if (m_to_c.checked) {
+          let con = input.value * 100;
+          res.textContent = `${input.value} Meter = ${con} Centimeter`;
+        } else if (km_to_m.checked) {
+          let con = input.value * 1000;
+          res.textContent = `${input.value} Kilometer = ${con} Meter`;
+        } else if (mi_to_km.checked) {
+          let con = input.value * 1.6;
+          res.textContent = `${input.value} Mile = ${con} Kilometer`;
+        } else {
+          res.textContent = 'Please select a conversion type';
+        }
+      } else {
+        res.textContent = 'Enter a positive value';
+      }
+    }
+  </script>
+</body>
+</html>
